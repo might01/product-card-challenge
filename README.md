@@ -28,7 +28,7 @@ Users should be able to:
 ![](./screenshot/mobile-size.png)
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Click here](https://might01.github.io/product-card-challenge)
 
 ## My process
 
