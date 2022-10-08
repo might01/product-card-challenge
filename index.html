@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Frontend Mentor | Product preview card component</title>
+  </head>
+  <body class="bg-cream">
+    <main class="container mx-auto flex justify-center items-center h-screen">
+      <div
+        class="bg-white flex flex-col max-w-[21rem] md:flex-row md:space-x-4 md:max-w-[37rem] rounded-lg overflow-hidden"
+      >
+        <!-- Image -->
+        <div class="md:w-1/2">
+          <img
+            src="images/image-product-mobile.jpg"
+            alt=""
+            class="w-full md:hidden"
+          />
+          <img
+            src="images/image-product-desktop.jpg"
+            alt=""
+            class="w-full hidden md:block scale-105"
+          />
+        </div>
+        <!-- Content -->
+        <div
+          class="md:w-1/2 p-6 flex flex-col font-montserrat text-sm space-y-4 md:space-y-6"
+        >
+          <h3 class="text-darkGrayishBlue uppercase text-xs tracking-[.25rem]">
+            Perfume
+          </h3>
+          <h1
+            class="text-veryDarkBlue font-fraunces font-bold text-3xl md:text-[2rem] md:leading-[2rem]"
+          >
+            Gabrielle Essence Eau De Parfum
+          </h1>
+          <p class="text-darkGrayishBlue leading-[1.45rem] pb-3">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div class="flex flex-row space-x-4 items-center pb-2">
+            <h1 class="font-fraunces text-darkCyan text-[2rem]">$149.99</h1>
+            <p class="text-darkGrayishBlue line-through">$169.99</p>
+          </div>
+          <button
+            class="border border-darkCyan rounded-lg p-3 text-white bg-darkCyan hover:bg-veryDarkCyan hover:border-veryDarkCyan duration-200"
+          >
+            <i class="fa-solid fa-cart-shopping pr-2"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
